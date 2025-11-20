@@ -1,0 +1,141 @@
+.main-container{
+	margin: 0 auto;
+	width: 1300px; 
+	height: 1100px;
+	background-color: #E3D9D4;
+	display: flex; 
+	border-radius: 12px;
+	gap: 20px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.20);
+	justify-content: center;
+	align-items: center;
+}
+.left-panel{
+	width: 30%;
+	height: 100%;
+	background-color: #876958;
+	color: #F5F2F0;
+	border-radius: 12px;
+}
+.photo-panel{
+	width: 100%;
+	height: 300px;
+	object-position: auto;
+	object-fit: cover;
+	transform-origin: center;
+	border-top-left-radius: 12px;
+}
+.text-content{
+	padding: 30px;
+	font-size: 20px;
+}
+.left-panel-section-title{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #F5F2F0;
+}
+.left-panel a{
+	color: #CEDAE9;
+	text-decoration: none;
+}
+.right-panel{
+	width: 70%;
+	height: 100%;
+}
+.section{
+	padding: 30px;
+	font-size: 20px;
+	color: #634D40;
+}
+.section-title{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #634D40;
+}
+.education{
+	display: flex;
+	justify-content: flex-start;
+}
+.education p{
+	margin-top: 0px;
+}
+.year{
+	padding: 0px;
+	width: 15%;
+ 	margin-bottom: 15px;
+ 	font-weight: bold;
+ 	line-height: 1.5;
+ 	color: #253850;
+}
+.description{
+	width: 85%;
+ 	margin-bottom: 15px;
+ 	padding-left: 10px;
+ 	line-height: 1.5;
+}
+.tag span{
+	border-radius: 20px;
+	background-color: #CEDAE9;
+	color: #507BAF;
+	display: inline;
+	margin-right: 20px;
+	padding: 7px;
+}
+.container{
+	display: flex;
+	justify-content: flex-start;
+}
+.hw-column{
+	width: 50%;
+	background-color: #F5F2F0;
+	border-radius: 8px;
+	padding: 20px;
+	margin: 5px;
+	padding-bottom: 10px;
+}
+.lab-column{
+	width: 50%;
+	background-color: #F5F2F0;
+	border-radius: 8px;
+	padding: 20px;
+	padding-bottom: 10px;
+	margin: 5px;
+}
+.hw-column h3, .lab-column h3{
+	margin: 3px;
+}
+.hw-column ul li, .lab-column ul li{
+    padding: 0px;
+    margin: 0;
+    line-height: 1.8;
+}
+.hw-column ul li a, .lab-column ul li a {
+    text-decoration: none;
+    color: #334F70;
+    transition: color 0.3s;
+}
+.hw-column ul li a:hover, .lab-column ul li a:hover {
+    color: #AFC2DA;
+}
+.music{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.music img{
+	max-width: 80px;
+	height: 80px;
+}
+.music-text{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.music-text p{
+	width: 150px;
+	padding: 10px;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+}
+.music-note{
+margin: 0px;
+}
