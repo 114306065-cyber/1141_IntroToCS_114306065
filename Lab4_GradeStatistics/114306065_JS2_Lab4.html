@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<body>
+	<input id="MathInput" type="number" placeholder="Math">
+	<input id="EnglishInput" type="number" placeholder="English">
+	<button id="submitBtn" onclick="myfunction()">Submit</button>
+	<table border="1" width="50%" style="margin: auto; border: 1px solid black;">
+	
+	<tr>
+	<td>#</td>
+	<td>Math</td>
+	<td>English</td>
+	<td>Average</td>
+	</tr>
+	<tr>
+	<td>1</td>
+	<td id="m1" width="150"></td>
+	<td id="e1" width="150"></td>
+	<td id="a1"></td>
+	</tr>		
+	<tr>
+	<td>2</td>
+	<td id="m2"></td>
+	<td id="e2"></td>
+	<td id="a2"></td>
+	</tr>
+	<tr>
+	<td>3</td>
+	<td id="m3"></td>
+	<td id="e3"></td>
+	<td id="a3"></td>
+	</tr>
+	<tfoot>
+	<tr>
+	<th>Average</th>
+	<th id="mAvg"></th>
+	<th id="eAvg"></th>
+	<th id="aAvg"></th>
+	</tr>
+</tfoot>
+	</table>
+	<script>
+		
+  var x = 1;
+
+  function myfunction() {
+    var math = document.getElementById("MathInput").value;
+    var eng  = document.getElementById("EnglishInput").value;
+
+    document.getElementById("m" + x).textContent = math;
+    document.getElementById("e" + x).textContent = eng;
+
+    document.getElementById("a" + x).textContent =
+      (Number(math) + Number(eng)) / 2;
+      updateColumnAverages();
+    x++;
+  }
+
+  function updateColumnAverages() {
+  	var mAvg =0;
+  	var eAvg =0;
+  	var aAvg =0;
+  	var mathTotal =0 ;
+  	var englishTotal =0;
+  	var avgTotal =0;
+  	for (var i = 1 ; i < x +1 ;i++){
+  		
+		mathTotal += Number(document.getElementById("m"+i).textContent);
+		 
+		englishTotal += Number(document.getElementById("e"+i).textContent);
+		 
+		avgTotal += Number(document.getElementById("a"+i).textContent);
+		
+  	}
+  	mAvg = mathTotal/x;
+		eAvg = englishTotal/x;
+		aAvg = avgTotal/x;
+  document.getElementById("mAvg").textContent = mAvg;
+  document.getElementById("eAvg").textContent = eAvg;
+  document.getElementById("aAvg").textContent = aAvg;
+  
+}
+	</script>
+</body>
+</html>
